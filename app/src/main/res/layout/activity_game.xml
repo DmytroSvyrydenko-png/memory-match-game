@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Virsraksts -->
+        <TextView
+            android:text="Memory Match"
+            android:textStyle="bold"
+            android:textSize="28sp"
+            android:layout_marginBottom="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!-- Apakšvirsraksts -->
+        <TextView
+            android:id="@+id/tvGreeting"
+            android:text="Welcome to the game!"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!--Punkti un gājiens -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginBottom="12dp">
+
+            <!-- Pirmā spēlētāja punkti -->
+            <TextView
+                android:id="@+id/tvScore1"
+                android:text="Player 1: 0"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp" />
+
+            <!-- Spēlētāja gājiens -->
+            <TextView
+                android:id="@+id/tvTurn"
+                android:text="Move: Player"
+                android:background="#EEEEEE"
+                android:padding="6dp"
+                android:textSize="14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"/>
+
+            <!-- Otrā spēlētāja punkti -->
+            <TextView
+                android:id="@+id/tvScore2"
+                android:text="Player 2: 0"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <!-- Kāršu režģis -->
+        <GridLayout
+            android:id="@+id/grid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:rowCount="4"
+            android:columnCount="4"
+            android:useDefaultMargins="true" />
+
+        <!-- Pogas -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Menu poga -->
+            <Button
+                android:id="@+id/btnMenu"
+                android:text="Menu"
+                android:layout_marginEnd="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <!-- Restart poga -->
+            <Button
+                android:id="@+id/btnRestart"
+                android:text="Restart Game"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
